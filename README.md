@@ -1,36 +1,29 @@
-# Atom with cool package in a toolbar
+# Atom with vital package in a toolbar
 
-Simple tool bar using [tool-bar](https://atom.io/packages/tool-bar) package but with more awesomeness like
-git time machine, git control, merge conflicts..etc
+Simple tool bar using [tool-bar](https://atom.io/packages/tool-bar) package but with more vital packages like
+git control, merge conflicts..etc
 
-![Main Tool Bar](https://i.imgur.com/hydLbCd.png)
 
 # Buttons
 
-* New File
+* Tree-View
 * Find and Replace
-* Save all
-* Open recent
 * Git control
-* Open on Github
 * Merge Conflicts
-* Git time machine
+* Git History
+* Open on Github
 * Terminal
-* Ask stack overflow
-* Atom Beautify
-* preference
+* Open Settings View
 
 # Dependencies
 
 * tool-bar
-* open-on-github
 * git-control
 * merge-conflicts
-* git-time-machine
 * terminal-plus
-* ask-stack
-* atom-beautify
-* recent-finder
+* git-history
+* open-on-github
+* split-diff
 
 When in **dev mode** it adds two more buttons:
 

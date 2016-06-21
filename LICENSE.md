@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2014 radjiv fender
+Copyright (c) 2014 Taron Petrosyan
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -4,12 +4,7 @@ module.exports =
     require('atom-package-deps').install('open-on-github')
     require('atom-package-deps').install('git-control')
     require('atom-package-deps').install('merge-conflicts')
-    # require('atom-package-deps').install('git-time-machine')
     require('atom-package-deps').install('terminal-plus')
-    # require('atom-package-deps').install('ask-stack')
-    # require('atom-package-deps').install('atom-beautify')
-    # require('atom-package-deps').install('recent-finder')
-    # require('atom-package-deps').install('tree-view')
     require('atom-package-deps').install('git-history')
     require('atom-package-deps').install('split-diff')
 
@@ -26,35 +21,11 @@ module.exports =
       callback: 'tree-view:toggle'
       icon: 'repo'
 
-    # @toolBar.addButton
-    #   tooltip: 'New File'
-    #   callback: 'application:new-file'
-    #   icon: 'document-text'
-    #   iconset: 'ion'
-
     @toolBar.addButton
       tooltip: 'Find and Replace'
       callback: 'project-find:show-in-current-directory'
       icon: 'search'
       iconset: 'fa'
-
-    # @toolBar.addButton
-    #   tooltip: 'Open Folder'
-    #   callback: 'application:open-folder'
-    #   icon: 'folder'
-    #   iconset: 'ion'
-
-    # @toolBar.addButton
-    #   tooltip: 'Save all'
-    #   callback: 'window:save-all'
-    #   icon: 'archive'
-    #   iconset: 'ion'
-
-    # @toolBar.addButton
-    #   tooltip: 'Open recent files'
-    #   dependency: 'recent-finder'
-    #   callback: 'recent-finder:toggle'
-    #   icon: 'file-submodule'
 
     @toolBar.addSpacer()
 
@@ -70,8 +41,6 @@ module.exports =
       dependency: 'merge-conflicts'
       callback: 'merge-conflicts:detect'
       icon: 'git-merge'
-    #   icon: 'code-fork'
-    #   iconset: 'fa'
 
     @toolBar.addButton
       tooltip: 'Git History'
@@ -81,12 +50,7 @@ module.exports =
       ]
       callback: ->
           editorElement = atom.views.getView(atom.workspace.getActiveTextEditor())
-        #   atom.commands.onDidDispatch((event) ->
-        #         atom.commands.onDidDispatch()
-        #         atom.commands.dispatch(editorElement, 'splite-diff:toggle')
-        #     )
           atom.commands.dispatch(editorElement, 'git-history:show-file-history')
-        #   'git-history:show-file-history'
       icon: 'history'
 
     @toolBar.addButton
@@ -94,13 +58,6 @@ module.exports =
       dependency: 'open-on-github'
       callback: 'open-on-github:file'
       icon: 'octoface'
-
-    # @toolBar.addButton
-    #   tooltip: 'git-time-machine'
-    #   dependency: 'git-time-machine'
-    #   callback: 'git-time-machine:toggle'
-    #   icon: 'map'
-    #   iconset: 'ion'
 
     @toolBar.addSpacer()
 
@@ -110,21 +67,6 @@ module.exports =
       callback: 'terminal-plus:toggle'
       icon: 'terminal'
       iconset: 'fa'
-
-    # @toolBar.addButton
-    #   icon: "question"
-    #   dependency: 'ask-stack'
-    #   callback: "ask-stack:ask-question"
-    #   tooltip: "ask stackoverflow"
-
-    # @toolBar.addButton
-    #   tooltip: 'Auto indent'
-    #   dependency: 'atom-beautify'
-    #   callback: 'atom-beautify:beautify-editor'
-    #   icon: 'indent'
-    #   iconset: 'fa'
-
-    # @toolBar.addSpacer()
 
     @toolBar.addButton
       icon: 'gear-a'
