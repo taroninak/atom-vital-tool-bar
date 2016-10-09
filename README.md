@@ -3,7 +3,7 @@
 Simple tool bar using [tool-bar](https://atom.io/packages/tool-bar) package but with more vital packages like
 git control, merge conflicts..etc
 
-![Main-Tool-Bar](http://cdn104.picsart.com/204213416000202.png)
+![Vital-Tool-Bar](http://cdn104.picsart.com/204213416000202.png)
 
 # Buttons
 
