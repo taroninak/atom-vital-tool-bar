@@ -14,7 +14,7 @@ module.exports =
   serialize: ->
 
   consumeToolBar: (toolBar) ->
-    @toolBar = toolBar 'main-tool-bar'
+    @toolBar = toolBar 'vital-tool-bar'
 
     @toolBar.addButton
       tooltip: 'Tree-View'
