@@ -1,7 +1,7 @@
 {
   "name": "vital-tool-bar",
   "main": "./lib/tool-bar-main",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Vital toolbar created with passion",
   "repository": "https://github.com/taronpa/atom-vital-tool-bar.git",
   "license": "MIT",
