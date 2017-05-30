@@ -1,6 +1,7 @@
 module.exports =
   activate: (state) ->
-    require('atom-package-deps').install('tool-bar-main')
+    require('atom-package-deps').install('tool-bar')
+    require('atom-package-deps').install('vital-tool-bar')
     require('atom-package-deps').install('open-on-github')
     require('atom-package-deps').install('git-control')
     require('atom-package-deps').install('merge-conflicts')
@@ -14,7 +15,7 @@ module.exports =
   serialize: ->
 
   consumeToolBar: (toolBar) ->
-    @toolBar = toolBar 'vital-tool-bar'
+    @toolBar = toolBar 'main-tool-bar'
 
     @toolBar.addButton
       tooltip: 'Tree-View'
